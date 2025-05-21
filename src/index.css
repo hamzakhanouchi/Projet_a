@@ -5,9 +5,187 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #ECF0F1;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.logo {
+  position: static; /* Remove absolute positioning */
+  width: 150px; /* Adjust size for alignment */
+  height: auto;
+}
+
+.icon-top-right {
+  position: static; /* Remove absolute positioning */
+  font-size: 95px; /* Adjust size for alignment */
+  color: #000;
+}
+
+.top-right-container {
+  position: absolute;
+  top: 10px;
+  right: 130px;
+  display: flex;
+  align-items: center; /* Align items vertically */
+  gap: 90px; /* Add spacing between elements */
+}
+
+.btn-success {
+  border-radius: 12px; /* Modify button borders */
+  border: 2px solidrgb(0, 0, 0); /* Add a solid border */ 
+  background-color: #1ABC9C; /* Change button color */
+  padding: 9px 40px; /* Add padding */
+  font-size: 20px; /* Adjust font size */
+}
+
+.button-grid {
+  display: grid; /* Use grid layout */
+  grid-template-columns: repeat(3, 1fr); /* Create 3 columns */
+  gap: 40px; /* Add spacing between buttons */
+  justify-content: center; /* Center the grid horizontally */
+  align-items: center; /* Center the grid vertically */
+}
+
+.btn-outline-secondary {
+  white-space: nowrap; /* Prevent text wrapping */
+  padding: 10px 20px; /* Adjust padding */
+  font-size: 16px; /* Adjust font size */
+  width: 230px; /* Set uniform button width */
+  height: 50px; /* Set uniform button height */
+  border: 2px solid #2C3E50; /* Change border color */
+  border-radius: 10px; /* Add rounded corners */
+}
+
+.second-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.text-left {
+  align-self: center;
+ 
+  font-size: 30px;
+  font-weight: bold;
+  color: #2C3E50;
+  margin-top: 30px;
+  padding: 10px;
+
+}
+
+
+.text-center h3 {
+  font-size: 30px;
+  align-self: center;
+  font-weight: normal;
+  color:  #1ABC9C;
+}
+
+.about-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #2C3E50; /* Black background */
+  color: #fff; /* White text color */
+  padding: 50px;
+  border-radius: 40px;
+}
+
+.about-left, .about-right {
+  width: 48%; /* Split the space evenly */
+}
+
+.about-left h2 {
+  font-family: 'Georgia', serif; /* Change font to Georgia */
+  font-size: 58px;
+  margin-bottom:50px;
+}
+
+.about-left p, .about-right p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.about-content {
+  text-align: justify;
+  font-size: 36px;
+  line-height: 1.4;
+  color: #fff; /* Ensure text is visible on black background */
+}
+
+.about-right .about-image {
+  display: block;
+  margin: 0 auto 15px; /* Center the image and add spacing below */
+  width: 100%; /* Make the image responsive */
+  max-width: 100px; /* Limit the maximum width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Add rounded corners */
+}
+
+.about-left-image {
+  display: block;
+  margin: 20px auto 0; /* Center the image and add spacing above */
+  width: 100%; /* Make the image responsive */
+  max-width: 300px; /* Limit the maximum width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Add rounded corners */
+}
+
+.about-below-image {
+  display: block;
+  margin: 100px 0 20px auto; /* Align the image to the right */
+  width: 40%; /* Reduce the size */
+  max-width: 300px; /* Limit the maximum width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Add rounded corners */
+}
+
+.about-below-container {
+  display: flex;
+  align-items: center; /* Align text and image vertically */
+  justify-content: space-between; /* Add space between text and image */
+  margin-top: 20px;
+}
+
+.about-below-text {
+  font-size: 18px;
+  color: #2C3E50;
+  max-width: 60%; /* Limit text width */
+  line-height: 1.5;
+}
+
+.about-below-image {
+  width: 50%; /* Adjust image size */
+  max-width: 300px; /* Limit the maximum width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Add rounded corners */
+}
+
+.what-we-do-section {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Full viewport height */
+  text-align: center;
+}
+
+.what-we-do-left {
+  max-width: 400px;
+  font-size: 18px;
+  font-family: 'Georgia', serif; /* Change font to Georgia */
+  line-height: 1.2;
+  color: #2C3E50;
+}
+
+.what-we-do-left h2 {
+  font-size: 34px;
+  margin-bottom: 7px;
+  font-weight: bold;
+  /* Change color */
+}
+
